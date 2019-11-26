@@ -20,8 +20,8 @@ class MyAdapter(private val primeNumber: ArrayList<Int>) :
         return primeNumber.size
     }
 
-    override fun onBindViewHolder(p0: ViewHolder, position: Int) {
-        p0.bind(primeNumber[position])
+    override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
+        viewHolder.bind(primeNumber[position])
     }
 
     inner class ViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
